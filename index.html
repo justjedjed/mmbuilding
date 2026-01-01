@@ -1,208 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Commercial Building</title>
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Remix Icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    <!-- Favicon / Logo for tab -->
-    <link rel="icon" type="image/png" href="img/mmbuildinglogo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>500 — Internal Server Error</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Helvetica, Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 7vh auto;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.06);
+      padding: 32px;
+    }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    .subtitle { color: #6b7280; margin-bottom: 18px; }
+    .panel {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 14px;
+    }
+    .row { display: flex; justify-content: space-between; margin-top: 6px; }
+    .label { color: #6b7280; }
+    ul { margin-top: 12px; }
+    .footer {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #6b7280;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-    <header id="home">
-        <nav class="navbar">
+  <div class="wrap">
+    <h1>Internal Server Error</h1>
+    <div class="subtitle">The server encountered an unexpected condition and could not complete your request.</div>
 
-            <ul class="nav_items" id="nav_links">
-                <div class="item">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#services">FEATURES</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+    <div class="panel">
+      <div class="row">
+        <span class="label">Status Code</span>
+        <span>500</span>
+      </div>
+      <div class="row">
+        <span class="label">Server</span>
+        <span>Application backend</span>
+      </div>
+      <div class="row">
+        <span class="label">Reference</span>
+        <span>#500-Internal</span>
+      </div>
+    </div>
 
-                </div>
-            </ul>
+    <ul>
+      <li>Try reloading this page in a few minutes</li>
+      <li>Clear your browser cache or try another browser</li>
+      <li>If you’re the site owner, check application logs and server resources</li>
+    </ul>
 
-            <div class="nav_menu" id="menu_btn">
-                <i class="ri-menu-line"></i>
-            </div>
-        </nav>
-
-        <section class="home">
-            <h2 class="headinghome_1">Welcome To MM Building</h2>
-
-            <div class="main_btn">
-
-                <!-- WATCH TOUR BUTTON -->
-                <button class="btn btn2" id="openVideo"><i class="ri-play-circle-line"></i> Watch Tour</button>
-
-                <!-- POPUP VIDEO MODAL -->
-                <div class="video-modal" id="videoModal">
-                    <div class="video-overlay"></div>
-                    <!-- professional overlay -->
-                    <div class="video-content">
-                        <span class="close-modal" id="closeVideo">&times;</span>
-                        <video controls autoplay>
-            <source src="img/Mm.mp4" type="video/mp4">
-        </video>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </section>
-    </header>
-
-    <!-- SERVICES -->
-    <section class="sec services" id="services">
-        <div class="head">
-            <h3 class="heading_1">AMENITIES & FACILITIES</h3>
-        </div>
-
-        <div class="boxes">
-            <div class="box">
-                <img src="img/hall.jpg" alt="">
-                <h4>Function Hall</h4>
-                <p>A spacious and elegant venue perfect for hosting meetings, events, and special celebrations</p>
-            </div>
-            <div class="box">
-                <img src="img/lights.webp" alt="">
-                <h4>Lights and Sound System</h4>
-                <p>Experience high-quality lighting and sound systems that enhance any event or room atmosphere.</p>
-            </div>
-            <div class="box">
-                <img src="img/projector.jpg" alt="">
-                <h4>Projector</h4>
-                <p>A bright and reliable projector ideal for presentations, conferences, and entertainment needs.</p>
-            </div>
-
-            <div class="box">
-                <img src="img/room.JPG" alt="">
-                <h4>Room</h4>
-                <p class="room-desc">A well-appointed and relaxing room designed for guests seeking comfort and affordability.</p>
-
-            </div>
-            <div class="box">
-                <img src="img/elevator.JPG" alt="">
-                <h4>Elevator</h4>
-                <p>A clean and modern elevator providing smooth and convenient access to all floors.</p>
-            </div>
-            <div class="box">
-                <img src="img/pool.jpg" alt="">
-                <h4>Swimming pool</h4>
-                <p>A refreshing and beautifully maintained pool perfect for leisure, relaxation, and family fun.</p>
-            </div>
-
-
-
-
-    </section>
-
-
-
-
-    <!-- ABOUT -->
-    <section class="sec about" id="about">
-        <div class="head about_heading">
-
-            <h1 class="heading">About <span>MM Building</span></h1>
-            <p class="para">MM Building is a premier commercial and residential space designed to meet the needs of businesses and individuals seeking comfort, security, and convenience.</p>
-        </div>
-
-        <div class="about_box">
-            <div class="box1">
-                <img src="img/about1.JPG" alt="">
-                <div class="box1_text">
-                    <p class="para1">The building features a bold, modern design with a large blue “M” on the front that makes it stand out.</p>
-
-                </div>
-            </div>
-
-            <div class="box1">
-                <img src="img/about2.png" alt="">
-                <div class="box1_text">
-                    <p class="para1">Guests can enjoy contemporary amenities surrounded by a peaceful natural setting.</p>
-
-                </div>
-            </div>
-
-            <div class="box1">
-                <img src="img/about3.png" alt="">
-                <div class="box1_text">
-                    <p class="para1">The establishment prides itself on delivering exceptional service through its dedicated team.</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- CONTACT -->
-    <section class="sec contact" id="contact">
-        <div class="contact_box">
-            <div class="left_box">
-                <h2 class="heading_1">Contact Us</h2>
-                <p class="para1">Looking for answers or ready to reserve? We’re just a message away.</p>
-                <button class="btn btn1" id="contactBtn">Contact Now</button>
-
-                <!-- Hidden contact details -->
-                <div class="contact_details" id="contactDetails">
-                    <p><strong>Email:</strong>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmcommercialbuilding@gmail.com" target="_blank" rel="noopener">
-        mmcommercialbuilding@gmail.com
-    </a>
-                    </p>
-
-
-
-                    <p><strong>Mobile/Telephone:</strong> 09517989296 / 09852364403</p>
-                    <p><strong>Address:</strong> Purok-3A Barangay Karaos, San Francisco Agusan Del Sur</p>
-
-                    <!-- Facebook link -->
-                    <a href="https://www.facebook.com/profile.php?id=61573910346368" target="_blank" rel="noopener" class="social-link">
-                        <img src="img/logofb.webp" alt="Facebook" class="facebook-logo">
-                    </a>
-                </div>
-            </div>
-
-            <div class="right_box">
-                <a href="https://www.google.com/maps/@8.4920849,125.9766854,3a,75y,240.76h,83.94t/data=!3m8!1e1!3m6!1sAFqsB1luEN6g25g30c8jsg!2e0!5s20250601T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D6.063671844422089%26panoid%3DAFqsB1luEN6g25g30c8jsg%26yaw%3D240.75591800796883!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDkwNy4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank" rel="noopener" class="map_container">
-
-                    <img src="img/front.png" alt="Map Location">
-                    <span class="map_overlay">View in Google Map</span>
-
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer_bar">
-            © 2025 MM Building. All rights reserved.
-        </div>
-    </footer>
-
-    <span class="top" id="to-top"><i class="ri-arrow-up-circle-line"></i></span>
-    <script src="index.js"></script>
+    <div class="footer">
+      This is a static fallback page. The server may be temporarily unavailable.
+    </div>
+  </div>
 </body>
-
 </html>
