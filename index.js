@@ -1,9 +1,9 @@
 // navbar Scroll
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function(){
     let navbar = document.querySelector('.navbar');
-    if (this.window.scrollY > 20) {
+    if(this.window.scrollY > 20){
         navbar.classList.add('scrolled')
-    } else {
+    }else{
         navbar.classList.remove('scrolled')
     }
 });
@@ -19,16 +19,16 @@ document.querySelector('#to-top').addEventListener('click', () => {
 
 
 
-function showscroll() {
+function showscroll(){
     let TopButton = document.getElementById('to-top');
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
         TopButton.classList.add('show')
-    } else {
+    }else{
         TopButton.classList.remove('show')
     }
 }
 
-window.onscroll = () => {
+window.onscroll = () =>{
     showscroll();
 }
 
@@ -38,7 +38,7 @@ const menuBtn = document.getElementById('menu_btn')
 const navLinks = document.getElementById('nav_links')
 const menuIcon = document.querySelector('i');
 
-menuBtn.addEventListener('click', (e) => {
+menuBtn.addEventListener('click',(e)=>{
     navLinks.classList.toggle('open')
 
     const isOpen = navLinks.classList.contains('open')
@@ -46,6 +46,8 @@ menuBtn.addEventListener('click', (e) => {
 })
 
 
+
+/////***********************************************************************VIDEO MODAL
 
 const openVideo = document.getElementById("openVideo");
 const closeVideo = document.getElementById("closeVideo");
@@ -67,9 +69,20 @@ closeVideo.addEventListener("click", () => {
 });
 
 
-const contactBtn = document.getElementById("contactBtn");
-const contactDetails = document.getElementById("contactDetails");
 
-contactBtn.addEventListener("click", () => {
-    contactDetails.classList.toggle("show");
+function changeCoffeeImage(element) {
+    const mainImage = document.getElementById('mainCoffeeImage');
+    mainImage.src = element.src;
+}
+
+
+
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
 });
+

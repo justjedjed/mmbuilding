@@ -1,1 +1,701 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>500 — Internal Server Error</title> <style> body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Helvetica, Arial, sans-serif; background: #f3f4f6; color: #111827; margin: 0; padding: 0; } .wrap { max-width: 720px; margin: 7vh auto; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,.06); padding: 32px; } h1 { font-size: 28px; margin: 0 0 8px; } .subtitle { color: #6b7280; margin-bottom: 18px; } .panel { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 14px; font-size: 14px; } .row { display: flex; justify-content: space-between; margin-top: 6px; } .label { color: #6b7280; } ul { margin-top: 12px; } .footer { margin-top: 22px; font-size: 12px; color: #6b7280; text-align: center; } </style></head><body> <div class="wrap"> <h1>Internal Server Error</h1> <div class="subtitle">The server encountered an unexpected condition and could not complete your request.</div> <div class="panel"> <div class="row"> <span class="label">Status Code</span> <span>500</span> </div> <div class="row"> <span class="label">Server</span> <span>Application backend</span> </div> <div class="row"> <span class="label">Reference</span> <span>#500-Internal</span> </div> </div> <ul> <li>Try reloading this page in a few minutes</li> <li>Clear your browser cache or try another browser</li> <li>If you’re the site owner, check application logs and server resources</li> </ul> <div class="footer"> This is a static fallback page. The server may be temporarily unavailable. </div> </div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M’M Commercial Building</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" type="img/finallogo.png" href="img/mm commercial png.png">
+
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/mm commercial png.png" alt="">
+                
+            </div>
+
+            <ul class="nav_items" id="nav_links">
+                <div class="item">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#venue">VENUE SERVICES</a></li>
+                    <li><a href="#amenities">FEATURES</a></li>
+                    <li><a href="#functionhall">FUNCTION HALL</a></li>
+                    <li><a href="#coffeeShop">RESTOBAR</a></li>
+                    <li><a href="#rooftop-pool">SWIMMING POOL</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>                   
+                </div>
+            </ul>
+
+            <div class="nav_menu" id="menu_btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+
+        <section class="home">
+            <h1 class="headinghome">M’M Commercial Building</h1>
+            <h2 class="headinghome_1">Elevate Your Aspirations</h2>
+            <div class="main_btn">
+                <button class="btn btn1" onclick="openMessenger()">Book Now</button>
+                <button class="btn btn2" onclick="openVideoModal()"><i class="ri-play-circle-line"></i> Watch Tour</button>
+            </div>
+        </section>
+    </header>
+
+
+<!-- Video Modal -->
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="close" onclick="closeVideoModal()">&times;</span>
+
+    <!-- Local Video File -->
+    <video id="videoPlayer" width="100%" controls>
+      <source src="vids/ads MMCB.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+</div>
+
+
+
+<script>
+function openVideoModal() {
+  document.getElementById("videoModal").style.display = "flex";
+  document.getElementById("videoPlayer").play(); // Start video only when clicked
+}
+
+function closeVideoModal() {
+  document.getElementById("videoModal").style.display = "none";
+
+  // Stop and reset video
+  const video = document.getElementById("videoPlayer");
+  video.pause();
+  video.currentTime = 0;
+}
+</script>
+
+<!----------------------------------------------------- VENUE SERVICES----------------------------------------------------------->
+
+<!-- VENUE SERVICES SECTION -->
+<section class="sec venue-services" id="venue">
+ 
+    <div class="venue-container"></div>
+    <!-- Decorative Corners -->
+  <img src="img/top-left.png" class="corner top-left" alt="">
+  <img src="img/top-right.png" class="corner top-right" alt="">
+  <img src="img/bottom-right.png" class="corner bottom-left" alt="">
+  <img src="img/bottom-left.png" class="corner bottom-right" alt="">
+
+    <h1 class="venue-title">
+      <span class="venue-main">MMCB</span><br>
+      <span class="venue-script">Venue Services</span>
+    </h1>
+
+    <!-- CATEGORY 1 -->
+    <div class="venue-category">
+      <h3 class="category-title">CATEGORY – 1</h3>
+      <h4 class="category-subtitle">FUNCTION HALL WITH FOOD PACKAGE</h4>
+
+      <p class="venue-text"><strong>FOOD MENU</strong></p>
+      <div class="venue-columns">
+        <span>Filipino Cuisine</span>
+        <span>Arabic Cuisine</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 2 -->
+    <div class="venue-category">
+      <h3 class="category-title">CATEGORY – 2</h3>
+      <h4 class="category-subtitle">FUNCTION HALL</h4>
+      <p class="venue-text"><strong>SUBJECT FOR RENTAL</strong></p>
+
+      <ul class="venue-list">
+        <li>Groom & Bride Chair</li>
+        <li>Room</li>
+        <li>Projector</li>
+      </ul>
+    </div>
+
+    <!-- CATEGORY 3 -->
+    <div class="venue-category">
+      <h3 class="category-title">CATEGORY – 3</h3>
+      <h4 class="category-subtitle">FUNCTION HALL</h4>
+      <p class="venue-text"><strong>SUBJECT FOR RENTAL</strong></p>
+
+      <ul class="venue-list">
+        <li>Projector</li>
+      </ul>
+    </div>
+
+    <!-- SWIMMING POOL PACKAGE -->
+    <div class="venue-category">
+      <h3 class="category-title">SWIMMING POOL PACKAGE</h3>
+      <p class="venue-text"><strong>SUBJECT FOR RENTAL</strong></p>
+      <p class="venue-text">Towel</p>
+    </div>
+
+    <!-- INDIVIDUAL -->
+    <div class="venue-category">
+      <h3 class="category-title">SWIMMING POOL OPEN FOR INDIVIDUAL</h3>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+    
+
+
+<!----------------------------------------------------- amenities and services----------------------------------------------------------->
+
+<section class="sec amenities" id="amenities">
+    <div class="head">
+        <h3 class="heading_1">Our Amenities & Facilities</h3>
+        <h1 class="heading">Events • Leisure • Comfort</h1>
+    </div>
+
+    <div class="boxes">
+
+        <div class="box">
+            <img src="icon/conference.png" alt="Function Hall">
+            <h4>Function Hall</h4>
+            <p>
+                A versatile, fully equipped space ideal for weddings, corporate events,
+                seminars, and private celebrations of any size.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="icon/lounge.png" alt="Top-Floor Lounge & Pool">
+            <h4>Top-Floor Lounge & Pool</h4>
+            <p>
+                An open-air retreat designed for social gatherings, private parties,
+                or simply relaxing in style.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="icon/building.png" alt="Modern Amenities">
+            <h4>Modern Amenities</h4>
+            <p>
+                Equipped with air-conditioning, advanced AV and sound systems,
+                and flexible seating arrangements to suit your unique needs.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="icon/lift.png" alt="Guest Convenience">
+            <h4>Guest Convenience</h4>
+            <p>
+                A reliable elevator ensures easy access between floors, providing
+                smooth flow, comfort, and accessibility throughout the building.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="icon/decoration-flower.png" alt="Customizable Options">
+            <h4>Customizable Options</h4>
+            <p>
+                From lighting and décor to audiovisual setups, we help bring
+                your vision to life for every event.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-------------------------------------------------functionhall---------------------------------------------------->
+
+<section id="functionhall" class="function-section">
+  <div class="function-container">
+
+    <!-- LEFT: Details -->
+    <div class="function-details">
+      <h2>M'M Function Hall</h2>
+      <p class="function-description">
+        Host weddings, corporate events, seminars, and private celebrations
+        in our elegant and fully equipped function hall. Designed with
+        flexibility and comfort in mind, our space adapts seamlessly to
+        your event’s unique vision.
+      </p>
+
+      <h3>Inclusions</h3>
+      <div class="function-inclusions">
+        <div class="inclusion-item">
+          <img src="icon/dinner-table.png" alt="Tables and Chairs">
+          <p>Tables & Chairs</p>
+        </div>
+        <div class="inclusion-item">
+          <img src="icon/sound-system.png" alt="Lights and Sound">
+          <p>Lights & Sound System</p>
+        </div>
+        <div class="inclusion-item">
+          <img src="icon/projector.png" alt="Projector">
+          <p>Projector</p>
+        </div>
+        <div class="inclusion-item">
+          <img src="icon/air-conditioning.png" alt="Airconditioned">
+          <p>Air-Conditioned</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Image Gallery -->
+    <div class="function-gallery">
+      <img src="img/fh.JPG" alt="Function Hall Setup">
+      <img src="img/fh1.JPG" alt="Banquet Arrangement">
+      <img src="img/fh2.JPG" alt="Wedding Setup">
+      <img src="img/fh3.JPG" alt="Corporate Event">
+    </div>
+
+  </div>
+</section>
+
+
+ <!-------------------------------------------------  restobar Shop ---------------------------------------------------->
+
+<section class="luxury-section hero-carousel" id="coffeeShop">
+
+  <!-- BACKGROUND CAROUSEL -->
+  <div class="carousel">
+    <div class="carousel-slide active">
+      <img src="img/resto/1.png" alt="Coffee Art">
+    </div>
+    <div class="carousel-slide">
+      <img src="img/resto/3.png" alt="Dessert">
+    </div>
+    <div class="carousel-slide">
+      <img src="img/resto/2.JPG" alt="Restaurant Interior">
+    </div>
+  </div>
+
+  <!-- CONTENT ON TOP -->
+  <div class="hero-content">
+
+    <div class="luxury-header">
+      <h2>MICHAELA'S ARABIC RESTOBAR</h2>
+    </div>
+
+    <div class="overlay">
+      <h3>Handcrafted Asian & Arabic Dining Experiences</h3>
+
+      <p class="description">
+        At Michaela's Arabic RestoBar & Coffee Shop, we offer bespoke catering with Asian and Arabic flavors made from fresh,
+        local ingredients. Enjoy flavorful dishes, aromatic spices,
+        and relax in our Shisha Lounge for a complete culinary experience.
+      </p>
+
+      <a href="https://michaelasarabicrestobar.com/"
+         target="_blank"
+         class="luxury-button">
+        Visit Our Website
+      </a>
+    </div>
+  </div>
+
+  <!-- CONTROLS -->
+  <button class="carousel-btn prev">&#10094;</button>
+  <button class="carousel-btn next">&#10095;</button>
+  <div class="carousel-dots"></div>
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const section = document.querySelector("#coffeeShop");
+  if (!section) return;
+
+  const slides = section.querySelectorAll(".carousel-slide");
+  const prevBtn = section.querySelector(".carousel-btn.prev");
+  const nextBtn = section.querySelector(".carousel-btn.next");
+  const dotsContainer = section.querySelector(".carousel-dots");
+  const carousel = section.querySelector(".carousel");
+
+  let index = 0;
+  let startX = 0;
+  let autoPlay;
+
+  // CREATE DOTS
+  slides.forEach((_, i) => {
+    const dot = document.createElement("span");
+    if (i === 0) dot.classList.add("active");
+
+    dot.addEventListener("click", () => {
+      showSlide(i);
+      resetAutoplay();
+    });
+
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll("span");
+
+  // SHOW SLIDE FUNCTION
+  function showSlide(i) {
+    slides.forEach(s => s.classList.remove("active"));
+    dots.forEach(d => d.classList.remove("active"));
+
+    slides[i].classList.add("active");
+    dots[i].classList.add("active");
+    index = i;
+  }
+
+  // BUTTON CONTROLS
+  nextBtn.addEventListener("click", () => {
+    showSlide((index + 1) % slides.length);
+    resetAutoplay();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    showSlide((index - 1 + slides.length) % slides.length);
+    resetAutoplay();
+  });
+
+  // AUTOPLAY
+  function startAutoplay() {
+    autoPlay = setInterval(() => {
+      showSlide((index + 1) % slides.length);
+    }, 5000);
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoPlay);
+    startAutoplay();
+  }
+
+  startAutoplay();
+
+  // TOUCH / SWIPE SUPPORT
+  carousel.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener("touchend", e => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextBtn.click();
+    if (endX - startX > 50) prevBtn.click();
+  });
+
+});
+</script>
+
+
+
+ <!------------------------------------------------- swimmingpool ---------------------------------------------------->
+
+
+<section id="rooftop-pool" class="rooftop-section">
+  <div class="rooftop-container">
+
+    <div class="rooftop-details">
+      <h2>M'M Rooftop Swimming Pool</h2>
+
+      <p class="rooftop-description">
+        Experience elevated relaxation at our luxurious rooftop swimming pool. 
+        Designed for serene mornings and glamorous sunset moments, this exclusive space blends sophistication, 
+        comfort, and breathtaking skyline views, 
+        all while facing the majestic view of Mount Magdiwata.
+      </p>
+
+      <!-- Images Now Below Description -->
+      <div class="rooftop-gallery">
+        <img src="gallery/swimmingpool/32.jpg" alt="Luxury Rooftop Pool">
+        <img src="gallery/swimmingpool/z.JPG" alt="Rooftop Pool at Night">
+        <img src="gallery/swimmingpool/v.JPG" alt="Rooftop Pool at Night">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+     <!------------------------------------------------- ABOUT ---------------------------------------------------->
+  <section class="sec about" id="about">
+    <div class="about_container">
+
+        <!-- ABOUT SECTION -->
+        <div class="about_heading">
+            <div>
+                <h3 class="heading_1">About MMCB</h3>
+                <h1 class="heading">Host. Relax. Celebrate. <span>All in One Place</span></h1>
+            </div>
+
+            <p class="para">
+                M'M Commercial Building is your ultimate destination for unforgettable events, 
+                leisure, and relaxation. We seamlessly combine a modern Function Hall and the vibrant Top-Floor Lounge & Pool, 
+                offering the strategic advantage of two premium venues in one building. This unique setup allows for effortless transitions between spaces, 
+                accommodating a wide range of occasions—from intimate private parties to large corporate gatherings.<br><br>
+
+                Our Function Hall features state-of-the-art lighting, sound systems, 
+                and flexible seating arrangements, perfect for weddings, seminars, conferences, 
+                and social celebrations. Meanwhile, the Top-Floor Lounge & Pool provides a chic,
+                vibrant atmosphere for evening receptions, rooftop parties, or casual relaxation, 
+                all with panoramic city views that create a memorable backdrop for every occasion.<br><br>
+
+                Whether you’re planning a sophisticated event or seeking a relaxing escape, 
+                M'M Commercial Building delivers a seamless blend of elegance, comfort, and convenience. 
+                With premium amenities, modern interiors, ample parking, and professional event coordination, 
+                we ensure every detail is thoughtfully curated. Host, relax, and celebrate—all in one place, where every experience is reliable, 
+                high-value, and unforgettable.
+            </p>
+        </div>
+
+        <!-- ABOUT IMAGES -->
+        <div class="about_box">
+            <div class="box1">
+                <img src="img/functionhall/6.JPG" alt="Function Hall">
+                <div class="box1_text">
+                    <p class="para1">Modern Function Hall for private and corporate events.</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img src="gallery/overview/2.jpg" alt="Top-Floor Lounge & Pool">
+                <div class="box1_text">
+                    <p class="para1">Vibrant Top-Floor Lounge & Pool for leisure and relaxation.</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img src="gallery/functionhall/3.jpg" alt="Event Space">
+                <div class="box1_text">
+                    <p class="para1">Flexible venues catering to small and large gatherings.</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img src="gallery/overview/1.png" alt="Celebration">
+                <div class="box1_text">
+                    <p class="para1">A perfect place to host, relax, and celebrate with friends and family.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GOLD DIVIDER -->
+        <div class="divider_line"></div>
+
+      
+      <!-- WHY CHOOSE US SECTION -->
+<div class="choose_section">
+    <h3 class="heading_1">Why Choose Us?</h3>
+    <h1 class="heading">Two Premium Venues, One Seamless Experience</h1>
+
+    <p class="para center">
+        We provide the unique advantage of <strong>two premium venues under one roof</strong>, allowing you to seamlessly guide your guests from the sophisticated <strong>Function Hall</strong> to the stylish <strong>Top-Floor Lounge & Pool</strong> for a truly impactful event. Perfect for private parties, corporate gatherings, or social celebrations, our spaces combine <strong>elegance</strong>, <strong>comfort</strong>, and <strong>modern sophistication</strong> to ensure every occasion is memorable.
+    </p>
+
+    <div class="choose_items">
+    <div class="choose_item">
+        <h3>Elegant Function Hall</h3>
+        <p>Host weddings, conferences, or social events in a spacious and versatile hall with state-of-the-art facilities.</p>
+    </div>
+
+    <div class="choose_item">
+        <h3>Prestigious Top-Floor Lounge & Pool</h3>
+        <p>Relax and entertain with panoramic city views, creating a vibrant atmosphere for memorable gatherings.</p>
+    </div>
+
+    <div class="choose_item">
+        <h3>Smooth Transitions</h3>
+        <p>Seamlessly move your guests between the Function Hall and Top-Floor Lounge & Pool for a continuous and cohesive experience.</p>
+    </div>
+
+    <div class="choose_item">
+        <h3>Memorable Events</h3>
+        <p>Premium amenities, sophisticated ambiance, and attentive service ensure every occasion is high-value and unforgettable.</p>
+    </div>
+    </div>
+
+</div>
+
+
+
+</section>
+
+
+
+<!-- Lightbox Popup -->
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<section class="gallery" id="gallery">
+    <div class="head">
+        <h3 class="headinghome">Our Gallery</h3>
+    </div>
+
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="gallery/overview/2.jpg" alt=""></div>
+        <div class="gallery-item"><img src="gallery/functionhall/12.JPG" alt=""></div>
+        <div class="gallery-item"><img src="gallery/swimmingpool/29.jpg" alt=""></div>
+        <div class="gallery-item"><img src="gallery/overview/1.png" alt=""></div>
+        <div class="gallery-item"><img src="gallery/Michaela/51.JPG" alt=""></div>
+        <div class="gallery-item"><img src="gallery/swimmingpool/32.jpg" alt=""></div>
+        <div class="gallery-item"><img src="gallery/overview/42.png" alt=""></div>
+        <div class="gallery-item"><img src="gallery/Michaela/79.jpg" alt=""></div>
+        <div class="gallery-item"><img src="gallery/functionhall/14.JPG" alt=""></div>
+        <div class="gallery-item"><img src="gallery/functionhall/11.JPG" alt=""></div>
+    </div>
+
+    <!-- SEE MORE PHOTOS BUTTON -->
+    <div class="see-more-container">
+        <a href="full-gallery.html" class="see-more-btn">See More Photos</a>
+    </div>
+</section>
+
+<script>
+/* Lightbox Script */
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".close-lightbox");
+
+document.querySelectorAll(".gallery-item img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+</script>
+
+
+
+
+
+
+    <!-- CONTACT -->
+    <section class="sec contact" id="contact">
+    <div class="contact_box">
+        
+        <div class="left_box">
+            <h2 class="heading_1">Contact Us</h2>
+            <h1 class="heading">Plan Your Next Event with Us</h1>
+            <p class="para1">Have questions or ready to host your next celebration? Our team is here to help you book the perfect venue at M'M Commercial Building.</p>
+
+            <!-- Contact details added -->
+            <div class="contact_details">
+                <p><strong>📍 Location:</strong> P3A-Brgy. Karaos, San Francisco, Agusan Del Sur 8501</p>
+                <p><strong>📧 Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmcommercialbuilding@gmail.com&su=Event%20Venue%20Inquiry&body=Hello%2C%0D%0AI%20would%20like%20to%20inquire%20about%20booking%20an%20event%20or%20venue%20at%20MM%20Commercial%20Building.%0D%0A%0D%0AThank%20you."
+                    target="_blank">mmcommercialbuilding@gmail.com</a></p>
+                <p><strong>📘 Facebook:</strong> 
+                    <a href="https://www.facebook.com/profile.php?id=61573910346368" target="_blank">M'M Commercial Building </a>
+                </p>
+                <p><strong>📞 Contact No.:</strong> 0965-917-4294</p>
+            </div>
+
+            <button class="btn btn1" onclick="openMessenger()">Contact Now</button>
+        </div>
+
+        <div class="right_box">
+            <a href="https://www.google.com/maps/@8.491836,125.9765407,3a,75y,301.77h,85.32t/data=!3m8!1e1!3m6!1sX1T-BCGAnvQWr3u3ZHr5fw!2e0!5s20250601T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D4.676896085208298%26panoid%3DX1T-BCGAnvQWr3u3ZHr5fw%26yaw%3D301.7662273790395!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D" target="_blank">
+                <div class="img_wrapper">
+                    <img src="gallery/overview/85.png" alt="">
+                    <div class="hover_text">View Location</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function openMessenger() {
+    // Replace 'yourpageusername' with your Facebook Page username
+    window.open('https://www.facebook.com/profile.php?id=61573910346368', '_blank');
+}
+</script>
+
+
+</div>
+    </section>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="sec footer_container">
+            <div class="footer_col">
+                <div class="footer_logo logo">
+                    <img src="img/mm commercial png.png" alt="">
+                    <span>M'M Commercial Building</span>
+                </div>
+                <p class="footer_text">Where exceptional venues meet unforgettable experiences your perfect event starts here.</p>
+                <ul class="footer_socials">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mmcommercialbuilding@gmail.com&su=Event%20Venue%20Inquiry&body=Hello%2C%0D%0AI%20would%20like%20to%20inquire%20about%20booking%20an%20event%20or%20venue%20at%20MM%20Commercial%20Building.%0D%0A%0D%0AThank%20you." target="_blank"><i class="ri-google-fill"></i>
+                    <a href="https://www.facebook.com/profile.php?id=61573910346368" target="_blank"><i class="ri-facebook-fill"></i>
+                    <li><a href="#"><i class=""></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>About</h4>
+                <ul class="footer_links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#amenities">Features</a></li>
+                    <li><a href="#venue">Venue Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Company</h4>
+                <ul class="footer_links">
+                    <li><a href="#home">Partners</a></li>
+                    <li><a href="#home">FAQ</a></li>
+                    <li><a href="#home">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Support</h4>
+                <ul class="footer_links">
+                    <li><a href="https://www.facebook.com/profile.php?id=61573910346368" target="_blank">Help Center</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61573910346368" target="_blank">Feedback</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61573910346368" target="_blank">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_bar">
+            © 2025 M'M Commercial Building. All rights reserved.
+        </div>
+    </footer>
+
+    <span class="top" id="to-top"><i class="ri-arrow-up-circle-line"></i></span>
+    <script src="index.js"></script>
+</body>
+</html>
